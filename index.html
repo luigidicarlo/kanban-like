@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drag and Drop Kanban Boards</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Kanban Boards</h1>
+        </header>
+        <main class="main-container">
+            <div class="kanban-board">
+                <div
+                    class="kanban-state"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                >
+                    <div id="card-1" class="kanban-card" data-task="1">
+                        <h5>Card 1</h5>
+                    </div>
+                    <div id="card-2" class="kanban-card" data-task="2">
+                        <h5>Card 2</h5>
+                    </div>
+                    <div id="card-3" class="kanban-card" data-task="3">
+                        <h5>Card 3</h5>
+                    </div>
+                </div>
+                <div class="kanban-state"></div>
+                <div class="kanban-state">
+                    <div id="card-4" class="kanban-card" data-task="4">
+                        <h5>Card 4</h5>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    background-color: #333;
+    color: #ccc;
+    padding: 0;
+    margin: 0;
+}
+header {
+    height: 25vh;
+    color: #333;
+    background-color: #ccc;
+    clip-path: polygon(0 0, 100% 0, 100% 15vh, 50% 100%, 0 15vh);
+    margin-bottom: 2rem;
+}
+header h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 1rem;
+}
+main.main-container {
+    display: block;
+    padding: 1rem;
+}
+.kanban-board {
+    display: flex;
+    align-items: initial;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+.kanban-board .kanban-state {
+    width: 250px;
+    min-height: 250px;
+    background-color: #ccc;
+    color: #333;
+    padding: 1rem;
+}
+.kanban-board .kanban-state .kanban-card {
+    width: 100%;
+    background-color: #333;
+    color: #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.kanban-board .kanban-state .kanban-card h5 {
+    margin: 0;
+}
